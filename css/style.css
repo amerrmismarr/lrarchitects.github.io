@@ -218,18 +218,16 @@ header .fa-bars {
 
 .home .home-slid .box {
     position: relative;
-    overflow: scroll;
+    overflow: auto;
     padding: 40px;
     margin-top: 100px;
     justify-content: center;
     align-items: center;
-    padding-left: 17%;
-    padding-right: 15%;
-    padding-bottom: 15%;
-
-
-
-
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    width: 100%;
 
 }
 
@@ -239,39 +237,28 @@ header .fa-bars {
     /* Center horizontally */
     align-items: center;
     /* Center vertically */
-    height: 600px;
-    width: 1000px;
+    width: 100%;
+    height: 100%;
+
+
+
 
 }
 
 .home .image img {
-    max-height: 100%;
-    /* Ensure the image does not exceed container height */
-    max-width: 100%;
-    /* Ensure the image does not exceed container width */
+
     object-fit: cover;
+    width: 1000px;
+    height: 1200x;
 }
 
 
-.home .home-slid .box::before {
-    content: "";
-    background: rgb(255, 255, 255);
-    position: absolute;
-    bottom: 0;
-    top: 0;
-    left: 0;
-    right: 0;
 
-
-}
 
 .home .home-slid .box .content {
-    position: absolute;
 
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: var(--min-color);
+
+
     text-align: center;
 }
 
@@ -318,6 +305,54 @@ header .fa-bars {
     color: var(--th-color);
     font-size: 2.2rem;
 }
+
+
+
+
+
+.sustainability {
+    background: #eee;
+}
+
+.sustainability .box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-top: 15rem;
+}
+
+.sustainability .box .image img {
+    width: 60rem;
+    height: 100%;
+    object-fit: cover;
+}
+
+.sustainability .box .content h3 {
+    color: var(--th-color);
+    font-size: 3.5rem;
+}
+
+.sustainability .box .content p {
+    color: var(--th-color);
+    font-size: 2rem;
+    margin: 2rem 0;
+    text-transform: none;
+}
+
+.sustainability .box .content div {
+    color: var(--th-color);
+    font-size: 2.2rem;
+}
+
+
+
+
+
+
+
+
+
 
 .services-heading {
     margin-top: 200px;
@@ -377,10 +412,7 @@ header .fa-bars {
     border-radius: 0.8rem;
 }
 
-.services .row .box:hover {
-    box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.2);
-    background: #eee;
-}
+
 
 .services .row .box i {
     font-size: 5rem;
@@ -562,6 +594,7 @@ header .fa-bars {
 
 
 
+
 }
 
 .vision .row {
@@ -575,6 +608,7 @@ header .fa-bars {
     width: 400px;
     height: 300px;
     object-fit: cover;
+
 }
 
 .vision .row h3 {
@@ -593,8 +627,15 @@ header .fa-bars {
 
 
 .blog .row img {
-    width: 100%;
+    height: 500px;
+    width: 1000px;
     object-fit: cover;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    width: 100%;
+
 
 }
 
@@ -609,6 +650,7 @@ header .fa-bars {
     font-size: 3rem;
     text-align: center;
     text-transform: none;
+    font-size: 20px;
 }
 
 .welcam {
