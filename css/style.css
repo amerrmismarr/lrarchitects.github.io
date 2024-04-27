@@ -282,40 +282,51 @@ header .fa-bars {
     margin: 1rem 0;
 }
 
-.about {
-    background: #eee;
+
+.sustainability .box .image {
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
 }
+
 
 .about .box {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 2rem;
-    margin-top: 7rem;
+    /* Align items vertically */
 }
 
-.about .box .image img {
-    width: 60rem;
-    height: 100%;
-    object-fit: cover;
+.about .image {
+    flex: 0 0 50%;
+    /* Image takes up 50% of the container */
 }
 
-.about .box .content h3 {
-    color: var(--th-color);
-    font-size: 3.5rem;
-}
-
-.about .box .content p {
-    color: var(--th-color);
-    font-size: 2rem;
-    margin: 2rem 0;
+.about .content {
     text-transform: none;
+    flex: 0 0 50%;
+    /* Content takes up 50% of the container */
+    padding: 0 20px;
+    font-size: 20px;
+    /* Add padding for spacing */
 }
 
-.about .box .content div {
-    color: var(--th-color);
-    font-size: 2.2rem;
+.about .image img {
+    width: 100%;
+    /* Make the image fill its container */
+    height: auto;
+    /* Let the browser calculate the height proportionally */
 }
+
+.about .content h3 {
+    text-transform: none;
+    margin-bottom: 10px;
+    /* Add margin below the h3 */
+}
+
+
 
 
 
@@ -341,37 +352,51 @@ header .fa-bars {
 }
 
 .sustainability .box .image {
+
     width: 100%;
     height: 100%;
+
     object-fit: cover;
 
 }
 
 
-.sustainability .box .image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-
+.sustainability .box {
+    display: flex;
+    align-items: center;
+    /* Align items vertically */
 }
 
-.sustainability .box .content h3 {
-    color: var(--th-color);
-    font-size: 3.5rem;
+.sustainability .image {
+    flex: 0 0 50%;
+    /* Image takes up 50% of the container */
 }
 
-.sustainability .box .content p {
-    color: var(--th-color);
-    font-size: 2rem;
-    margin: 2rem 0;
+.sustainability .content {
     text-transform: none;
-    font-size: 1.7rem;
+    flex: 0 0 50%;
+    /* Content takes up 50% of the container */
+    padding: 0 20px;
+    font-size: 22px;
+    /* Add padding for spacing */
 }
 
-.sustainability .box .content div {
-    color: var(--th-color);
-    font-size: 2.2rem;
+.sustainability .image img {
+    width: 100%;
+    /* Make the image fill its container */
+    height: auto;
+    /* Let the browser calculate the height proportionally */
 }
+
+.sustainability .content h3 {
+    text-transform: none;
+    margin-bottom: 30px;
+    /* Add margin below the h3 */
+}
+
+
+
+
 
 
 
