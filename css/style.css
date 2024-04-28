@@ -800,9 +800,19 @@ header .fa-bars {
     color: var(--th-color);
     font-size: 1.9rem;
     margin: rem 0;
-    padding-left: 20%;
-    padding-right: 20%;
+    padding-left: 0%;
+    padding-right: 0%;
     text-transform: none;
+}
+
+/* For screens larger than 768px wide, display image and text side by side */
+@media screen and (min-width: 800px) {
+    .vision .row p {
+        padding-left: 20%;
+        padding-right: 20%;
+        /* Center items vertically */
+    }
+
 }
 
 
