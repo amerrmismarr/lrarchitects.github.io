@@ -47,6 +47,13 @@ document.addEventListener('DOMContentLoaded', function () {
     document.querySelector('.content').style.display = 'block'; // Show main content
   });
 
+  // Mute the video for autoplay on mobile devices
+  video.muted = true;
+
+  // Play the video
+  video.play();
+
+
   // Optionally, you can add a timeout to automatically hide the video after a certain duration
   setTimeout(function () {
     video.parentElement.style.display = 'none'; // Hide video container
