@@ -253,9 +253,9 @@ header .fa-bars {
 .home .image img {
 
     object-fit: cover;
-    max-width: 50%;
+    max-width: 60%;
     /* Ensure the image doesn't exceed its container */
-    max-height: 50%;
+    max-height: 60%;
     /* Ensure the image doesn't exceed its container */
     width: auto;
     /* Let the browser calculate the width proportionally */
