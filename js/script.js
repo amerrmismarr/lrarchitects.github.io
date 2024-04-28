@@ -64,11 +64,20 @@ document.addEventListener('DOMContentLoaded', function () {
 document.addEventListener('DOMContentLoaded', function () {
   const gifContainer = document.querySelector('.gif-container');
 
-  // Hide the GIF container after 3 seconds
-  setTimeout(function () {
-    gifContainer.style.display = 'none';
-    document.querySelector('.content').style.display = 'block'; // Show main content
-  }, 2000); // Hide after 3 seconds
+  function reloadAndHideGIF() {
+    const gifImage = gifContainer.querySelector('img');
+    gifImage.src = gifImage.src; // Reset the src attribute to reload the GIF
+
+    // Hide the GIF container after 3 seconds
+    setTimeout(function () {
+      gifContainer.style.display = 'none';
+      document.querySelector('.content').style.display = 'block'; // Show main content
+    }, 3000); // Hide after 3 seconds
+  }
+
+  // Call reloadAndHideGIF() on page load
+  reloadAndHideGIF();
+
 });
 
 
