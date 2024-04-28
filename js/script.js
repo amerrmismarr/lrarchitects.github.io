@@ -61,6 +61,19 @@ document.addEventListener('DOMContentLoaded', function () {
   }, 2000); // Hide video after 10 seconds
 });
 
+document.addEventListener('DOMContentLoaded', function () {
+  const gifContainer = document.querySelector('.gif-container');
+
+  // Hide the GIF container after 3 seconds
+  setTimeout(function () {
+    gifContainer.style.display = 'none';
+    document.querySelector('.content').style.display = 'block'; // Show main content
+  }, 2000); // Hide after 3 seconds
+});
+
+
+
+
 
 document.addEventListener('DOMContentLoaded', function () {
   // Select the first image

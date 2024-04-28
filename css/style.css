@@ -50,6 +50,35 @@ html {
     overflow: hidden;
 }
 
+
+.gif-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    /* Ensure it appears above other content */
+    overflow: hidden;
+}
+
+
+
+#gif-splash {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 100%;
+    width: 100%;
+    background-color: #fafaff;
+
+    transform: translate(-50%, -50%);
+    object-fit: contain;
+    /* Maintain aspect ratio */
+}
+
+
+
 #video-splash {
     position: absolute;
     top: 50%;
