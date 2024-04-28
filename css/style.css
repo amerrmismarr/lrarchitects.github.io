@@ -280,7 +280,9 @@ header .fa-bars {
 .home .home-slid .box .content p {
     font-size: 2.5rem;
     margin: 1rem 0;
+
 }
+
 
 
 .sustainability .box .image {
@@ -378,6 +380,7 @@ header .fa-bars {
     /* Content takes up 50% of the container */
     padding: 0 20px;
     font-size: 22px;
+    text-transform: none;
     /* Add padding for spacing */
 }
 
@@ -389,6 +392,12 @@ header .fa-bars {
 }
 
 .sustainability .content h3 {
+    text-transform: none;
+    margin-bottom: 30px;
+    /* Add margin below the h3 */
+}
+
+.sustainability .content p {
     text-transform: none;
     margin-bottom: 30px;
     /* Add margin below the h3 */
@@ -639,8 +648,9 @@ header .fa-bars {
 }
 
 .blog .row {
+    margin-top: 200px;
+
     display: list-item;
-    margin: 5rem;
     padding-left: 300px;
     padding-right: 300px;
     list-style-type: none;
@@ -677,6 +687,7 @@ header .fa-bars {
     margin: rem 0;
     padding-left: 20%;
     padding-right: 20%;
+    text-transform: none;
 }
 
 
