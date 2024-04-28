@@ -225,7 +225,7 @@ header .fa-bars {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 50px;
+    margin-bottom: 300px;
     width: 100%;
 
 }
@@ -282,6 +282,31 @@ header .fa-bars {
     margin: 1rem 0;
 
 }
+
+.sustainability .box {
+
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+/* For screens larger than 768px wide, display image and text side by side */
+@media screen and (min-width: 800px) {
+    .sustainability .box {
+        flex-direction: row;
+        align-items: center;
+        /* Center items vertically */
+    }
+
+    .sustainability .box .content {
+        text-align: left;
+        /* Align text to the left */
+        margin-left: 10px;
+        /* Add spacing between image and text */
+    }
+}
+
 
 
 
@@ -498,20 +523,30 @@ header .fa-bars {
     /* Adjust the value as needed */
 }
 
-.portfolio .row {
+.portfolio .row ul {
     display: list-item;
     grid-template-columns: repeat(auto-fit, minmax(25%, 1fr));
-    gap: 1rem;
-    margin: 6rem auto;
-    width: 40%;
-    height: 10%;
+
+    padding-top: 150px;
+    padding-bottom: 150px;
+    margin: auto;
+    width: 50%;
+    height: auto;
     text-align: center;
     /* Position the .row absolutely */
     position: relative;
+    list-style: none;
+
+
 
 
 
     /* Move the .row to the middle horizontally */
+}
+
+.portfolio .row li:not(:last-child) {
+    margin-bottom: 20px;
+    /* Add margin between list items */
 }
 
 .portfolio .row .box {
@@ -520,19 +555,22 @@ header .fa-bars {
     height: 100%;
     width: 100%;
     display: flex;
-    margin: 3rem;
     /* Add margin around each box */
 
 }
 
+
+
 .portfolio .row .box:hover img {
     transform: translateY(0%);
+
+
 
 }
 
 .portfolio .row .box img {
 
-    height: 100%;
+    height: auto;
     /* Set height to 60% of the .box height */
     width: 100%;
     /* Set width to 80% of the .box width */
@@ -542,6 +580,8 @@ header .fa-bars {
 
 .portfolio .row .box:hover .content {
     transform: translateY(0);
+
+
 }
 
 .portfolio .row .box .content {
@@ -550,7 +590,6 @@ header .fa-bars {
     left: 0;
     background: rgba(56, 45, 45, 0.7);
     text-align: center;
-    padding: 3rem 2rem;
     height: 100%;
     /* Make content height same as box height */
     width: 100%;
@@ -563,81 +602,114 @@ header .fa-bars {
 }
 
 .portfolio .row .box .content h3 {
-    font-size: 2.5rem;
+    font-size: 20px;
     color: var(--sc-color);
-    margin-top: 4rem;
+    margin-top: 2rem;
 }
 
 .portfolio .row .box .content p {
-    padding: 1rem 0;
-    font-size: 1.8rem;
+    padding: 5px;
+    font-size: 20px;
     line-height: 1;
     color: var(--min-color);
     margin-bottom: 0;
     color: var(--min-color);
 }
 
-.team {
-    width: 100%;
-}
-
-.team .row {
-
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    position: relative;
-    display: flex;
-    align-items: center;
-    padding-bottom: 100px;
-}
 
 
 
-.team-heading {
+
+
+.new-team .container {
+
     margin-top: 200px;
-    text-align: center;
-    /* Center the text */
-    font-size: 2em;
-    /* Adjust the value as needed */
+    margin-bottom: 200px;
+    display: flex;
+    justify-content: center;
+    /* Center the boxes horizontally */
+    gap: 20px;
+    transform: none;
+    text-transform: none;
+
+    /* Add spacing between the boxes */
 }
 
-.team .row .team-slider .box {
-    padding: 10%;
-}
-
-.team .team-slider .box .content {
+.new-team .box {
     background: #222;
-    box-shadow: 0 0.5 0.5 rgba(0, 0, 0, 0.6);
+    height: 400px;
+    width: 400px;
+
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Center items horizontally */
     text-align: center;
-    padding: 4rem;
-    border-radius: 1rem;
-    height: 45rem;
+    transform: none;
+    text-transform: none;
+
 }
 
-.team .team-slider .box .image img {
-    width: 20rem;
-    height: 20rem;
-    border-radius: 100%;
-    position: absolute;
-    top: 50%;
-    left: 33%;
+.new-team .avatar {
+
+    width: 150px;
+    /* Adjust avatar size as needed */
+    height: 150px;
+    margin-top: 30px;
+    /* Adjust avatar size as needed */
+    border-radius: 50%;
+    overflow: hidden;
     border: 0.3rem solid var(--sc-color);
+    /* Blue border */
+    transform: none;
+    text-transform: none;
 
 }
 
-.team .team-slider .box .content h3 {
-    font-size: 3rem;
-    color: var(--sc-color);
-    margin: 1rem;
-
+.new-team .avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-.team .team-slider .box .content p {
-    color: #fff;
-    font-size: 2.2rem;
+.details h3 {
+    font-size: 30px;
+    /* Adjust name font size */
+    margin-bottom: 0.5em;
+    /* Add spacing below the name */
+    text-transform: none;
 }
+
+.details p {
+    font-size: 20px;
+    /* Adjust title font size */
+    margin: 0;
+    /* Remove default margin */
+    text-transform: none;
+}
+
+@media screen and (max-width: 767px) {
+    .new-team .container {
+        flex-direction: column;
+        /* Change to column layout on smaller screens */
+        align-items: center;
+        /* Center items horizontally */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
 
 .blog-heading {
     margin-top: 200px;
@@ -668,11 +740,13 @@ header .fa-bars {
     grid-template-columns: repeat(auto-fit, minmax(25%, 1fr));
     gap: 2rem;
     margin: 6rem 0;
+    list-style: none;
+
 }
 
 .vision .row img {
-    width: 50%;
-    height: 50%;
+    width: 70%;
+    height: 70%;
     object-fit: cover;
 
 }
