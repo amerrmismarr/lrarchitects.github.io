@@ -802,6 +802,7 @@ header .fa-bars {
     margin: rem 0;
     padding-left: 0%;
     padding-right: 0%;
+    text-align: left;
     text-transform: none;
 }
 
