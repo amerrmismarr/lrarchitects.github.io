@@ -40,7 +40,7 @@ html {
 }
 
 .video-container {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -59,7 +59,7 @@ html {
     background-color: white;
 
     transform: translate(-50%, -50%);
-    object-fit: fill;
+    object-fit: contain;
     /* Maintain aspect ratio */
 }
 
@@ -651,8 +651,8 @@ header .fa-bars {
     margin-top: 200px;
 
     display: list-item;
-    padding-left: 300px;
-    padding-right: 300px;
+    padding-left: 20%;
+    padding-right: 20%;
     list-style-type: none;
 
 
@@ -660,6 +660,8 @@ header .fa-bars {
 
 
 }
+
+
 
 .vision .row {
     display: list-item;
