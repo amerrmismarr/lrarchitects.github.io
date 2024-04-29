@@ -780,40 +780,36 @@ header .fa-bars {
     gap: 2rem;
     margin: 6rem 0;
     list-style: none;
-
 }
 
 .vision .row img {
-    width: 70%;
-    height: 70%;
+    width: 100%;
+    height: auto;
     object-fit: cover;
-
 }
 
 .vision .row h3 {
     color: var(--th-color);
-    font-size: 3rem;
-    margin: 1.5rem 0;
+    font-size: 1.2rem;
+    /* Adjusted font size */
 }
 
 .vision .row p {
     color: var(--th-color);
-    font-size: 1.9rem;
-    margin: rem 0;
-    padding-left: 0%;
-    padding-right: 0%;
+    /* Adjusted font size */
+    /* Adjusted margin */
+    padding-left: 0;
+    padding-right: 0;
     text-align: left;
     text-transform: none;
 }
 
-/* For screens larger than 768px wide, display image and text side by side */
+/* For screens larger than 800px wide, adjust padding */
 @media screen and (min-width: 800px) {
     .vision .row p {
-        padding-left: 20%;
-        padding-right: 20%;
-        /* Center items vertically */
-    }
 
+        text-align: left;
+    }
 }
 
 
@@ -934,7 +930,7 @@ textarea {
 }
 
 .footer h3 {
-    font-size: 3.5rem;
+    font-size: 2rem;
     margin: 2rem 0;
     color: var(--min-color);
 }
@@ -1065,7 +1061,8 @@ textarea {
 
     .footer {
 
-        grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
+
+        grid-template-columns: repeat(auto-fit, minmax(80%, 1fr));
     }
 }
 
