@@ -52,16 +52,17 @@ html {
 
 
 .gif-container {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
+    background-color: #fafaff;
+    /* White background */
 
     height: 100%;
     z-index: 9999;
     /* Ensure it appears above other content */
-    overflow: hidden;
-    outline: none;
+
     /* Add this line */
 }
 
@@ -71,18 +72,17 @@ html {
 
 
 #gif-splash {
-    position: absolute;
+    position: fixed;
     top: 50%;
     left: 50%;
-    height: 100%;
-    width: 100%;
+    height: 20%;
+    width: 20%;
     background-color: #fafaff;
-    border-color: #fafaff;
 
 
 
     transform: translate(-50%, -50%);
-    object-fit: cover;
+    object-fit: contain;
     /* Maintain aspect ratio */
 }
 
@@ -676,8 +676,8 @@ header .fa-bars {
 
 .new-team .box {
     background: #222;
-    height: 400px;
-    width: 350px;
+    height: 300px;
+    width: 250px;
 
     color: white;
     border-radius: 10px;
@@ -694,10 +694,9 @@ header .fa-bars {
 
 .new-team .avatar {
 
-    width: 150px;
+    width: 10rem;
     /* Adjust avatar size as needed */
-    height: 150px;
-    margin-top: 30px;
+    height: 10rem;
     /* Adjust avatar size as needed */
     border-radius: 50%;
     overflow: hidden;
@@ -715,7 +714,7 @@ header .fa-bars {
 }
 
 .details h3 {
-    font-size: 30px;
+    font-size: 25px;
     /* Adjust name font size */
     margin-bottom: 0.5em;
     /* Add spacing below the name */
@@ -723,9 +722,9 @@ header .fa-bars {
 }
 
 .details p {
-    font-size: 20px;
+    font-size: 15px;
     /* Adjust title font size */
-    margin: 0;
+    margin: 2rem;
     /* Remove default margin */
     text-transform: none;
 }

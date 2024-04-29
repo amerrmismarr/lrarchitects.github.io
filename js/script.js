@@ -72,7 +72,7 @@ document.addEventListener('DOMContentLoaded', function () {
     setTimeout(function () {
       gifContainer.style.display = 'none';
       document.querySelector('.content').style.display = 'block'; // Show main content
-    }, 3000); // Hide after 3 seconds
+    }, 2000); // Hide after 3 seconds
   }
 
   // Call reloadAndHideGIF() on page load
