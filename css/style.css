@@ -399,7 +399,7 @@ header .fa-bars {
 
 
 .sustainability {
-    background: #eee;
+    background-color: #eee;
 }
 
 .sustainability .box {
@@ -662,8 +662,8 @@ header .fa-bars {
 
 .new-team .container {
 
-    margin-top: 200px;
-    margin-bottom: 200px;
+    margin-top: 150px;
+    margin-bottom: 400px;
     display: flex;
     justify-content: center;
     /* Center the boxes horizontally */
@@ -920,22 +920,28 @@ textarea {
 }
 
 .footer {
+    position: relative;
+    /* Position the footer */
+    bottom: 0;
+    /* Stick it to the bottom */
+    left: 0;
+    right: 0;
     background: #222;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(20%, 1fr));
     gap: 2rem;
     text-align: center;
-    padding: 4rem;
+    padding: 1rem;
+    /* Initially hide the footer */
 }
 
 .footer h3 {
-    font-size: 2rem;
-    margin: 2rem 0;
+    font-size: 1.5rem;
     color: var(--min-color);
 }
 
 .footer p {
-    font-size: 1.6rem;
+    font-size: 1.3rem;
     margin: 1rem 0;
     color: var(--min-color);
 }
@@ -1061,7 +1067,7 @@ textarea {
     .footer {
 
 
-        grid-template-columns: repeat(auto-fit, minmax(80%, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
     }
 }
 
