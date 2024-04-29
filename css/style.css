@@ -330,6 +330,13 @@ header .fa-bars {
 
 }
 
+.sustainability .box .content {
+    text-align: left;
+    /* Align text to the left */
+    font-size: 1.9rem;
+    /* Add spacing between image and text */
+}
+
 /* For screens larger than 768px wide, display image and text side by side */
 @media screen and (min-width: 800px) {
     .sustainability .box {
@@ -387,6 +394,7 @@ header .fa-bars {
 }
 
 .about .content h3 {
+
     text-transform: none;
     margin-bottom: 10px;
     /* Add margin below the h3 */
@@ -442,14 +450,13 @@ header .fa-bars {
     text-transform: none;
     flex: 0 0 50%;
     /* Content takes up 50% of the container */
-    padding: 0 20px;
     font-size: 22px;
     text-transform: none;
     /* Add padding for spacing */
 }
 
 .sustainability .image img {
-    width: 100%;
+    width: 80%;
     /* Make the image fill its container */
     height: auto;
     /* Let the browser calculate the height proportionally */
