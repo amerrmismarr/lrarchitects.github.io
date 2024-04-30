@@ -290,16 +290,32 @@ header .fa-bars {
 }
 
 .home .image img {
+    margin-top: 150px;
 
     object-fit: cover;
-    max-width: 60%;
+    max-width: 90%;
     /* Ensure the image doesn't exceed its container */
-    max-height: 60%;
+    max-height: 90%;
     /* Ensure the image doesn't exceed its container */
     width: auto;
     /* Let the browser calculate the width proportionally */
     height: auto;
     /* Let the browser calculate the height proportionally */
+}
+
+@media screen and (min-width: 800px) {
+    .home .image img {
+
+        object-fit: cover;
+        max-width: 60%;
+        /* Ensure the image doesn't exceed its container */
+        max-height: 60%;
+        /* Ensure the image doesn't exceed its container */
+        width: auto;
+        /* Let the browser calculate the width proportionally */
+        height: auto;
+        /* Let the browser calculate the height proportionally */
+    }
 }
 
 
@@ -318,52 +334,9 @@ header .fa-bars {
 
 .home .home-slid .box .content p {
     font-size: 2.5rem;
-    margin: 1rem 0;
 
 }
 
-.sustainability .box {
-
-    display: flex;
-    flex-direction: column;
-
-
-}
-
-.sustainability .box .content {
-    text-align: left;
-    /* Align text to the left */
-    font-size: 1.9rem;
-    /* Add spacing between image and text */
-}
-
-/* For screens larger than 768px wide, display image and text side by side */
-@media screen and (min-width: 800px) {
-    .sustainability .box {
-        flex-direction: row;
-        align-items: center;
-        /* Center items vertically */
-    }
-
-    .sustainability .box .content {
-        text-align: left;
-        /* Align text to the left */
-        margin-left: 10px;
-        /* Add spacing between image and text */
-    }
-}
-
-
-
-
-.sustainability .box .image {
-
-    width: 100%;
-    height: 100%;
-
-    object-fit: cover;
-
-}
 
 
 .about .box {
@@ -406,19 +379,59 @@ header .fa-bars {
 
 
 
+
+
+.sustainability .box .content {
+    text-align: left;
+    /* Align text to the left */
+    font-size: 1.9rem;
+    /* Add spacing between image and text */
+}
+
+/* For screens larger than 768px wide, display image and text side by side */
+@media screen and (min-width: 800px) {
+    .sustainability .box {
+        flex-direction: row;
+        align-items: center;
+        /* Center items vertically */
+    }
+
+    .sustainability .box .content {
+        text-align: left;
+        /* Align text to the left */
+        margin-left: 10px;
+        /* Add spacing between image and text */
+    }
+}
+
+
+
+
+.sustainability .box .image {
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+}
+
+
+
 .sustainability {
     background-color: #eee;
 }
 
 .sustainability .box {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: start;
     gap: 2rem;
     width: 100%;
     height: 100%;
-    margin-top: 200px;
-    margin-bottom: 200px;
+    margin-top: 150px;
+
 
 
 
@@ -437,7 +450,7 @@ header .fa-bars {
 
 .sustainability .box {
     display: flex;
-    align-items: center;
+
     /* Align items vertically */
 }
 
@@ -470,7 +483,7 @@ header .fa-bars {
 
 .sustainability .content p {
     text-transform: none;
-    margin-bottom: 30px;
+
     /* Add margin below the h3 */
 }
 
@@ -781,14 +794,45 @@ header .fa-bars {
 
 
 .vision .row {
-    display: list-item;
+    display: flex;
+    flex-direction: column;
+    /* Stack items vertically */
+    align-items: flex-start;
+    /* Align items to the start of the flex container */
     grid-template-columns: repeat(auto-fit, minmax(25%, 1fr));
     gap: 2rem;
-    margin: 6rem 0;
     list-style: none;
+    margin-top: 100px;
+
 }
 
+
+.vision .row .box {
+
+    flex-direction: column;
+    /* Stack items vertically */
+
+
+}
+
+.vision .box .text {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.vision .row .box {
+    display: flex;
+    align-items: flex-start;
+    /* Align items to the start of each box */
+    gap: 20px;
+    /* Adjust the gap between image and text */
+}
+
+
 .vision .row img {
+    max-width: 100%;
+    /* Ensure images don't exceed their container */
     width: 100%;
     height: auto;
     object-fit: cover;
@@ -797,15 +841,16 @@ header .fa-bars {
 .vision .row h3 {
     color: var(--th-color);
     font-size: 1.2rem;
-    /* Adjusted font size */
+    margin: 0;
+    /* Reset margin */
 }
 
 .vision .row p {
     color: var(--th-color);
+    margin: 0;
+    /* Reset margin */
+    font-size: 1.8rem;
     /* Adjusted font size */
-    /* Adjusted margin */
-    padding-left: 0;
-    padding-right: 0;
     text-align: left;
     text-transform: none;
 }
@@ -816,7 +861,17 @@ header .fa-bars {
 
         text-align: left;
     }
+
+    .vision .row .box {
+
+        text-align: left;
+        flex-direction: row;
+        align-items: center;
+        /* Center items vertically */
+    }
 }
+
+
 
 
 
