@@ -292,6 +292,7 @@ header .fa-bars {
 .home .image img {
     margin-top: 150px;
 
+
     object-fit: cover;
     max-width: 90%;
     /* Ensure the image doesn't exceed its container */
@@ -305,6 +306,9 @@ header .fa-bars {
 
 @media screen and (min-width: 800px) {
     .home .image img {
+
+
+        margin-top: 0px;
 
         object-fit: cover;
         max-width: 60%;
@@ -388,6 +392,24 @@ header .fa-bars {
     /* Add spacing between image and text */
 }
 
+.sustainability .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    gap: 2rem;
+    width: 100%;
+    height: 100%;
+    margin-top: 150px;
+    margin-bottom: 300px;
+
+
+
+
+
+}
+
+
 /* For screens larger than 768px wide, display image and text side by side */
 @media screen and (min-width: 800px) {
     .sustainability .box {
@@ -422,21 +444,6 @@ header .fa-bars {
     background-color: #eee;
 }
 
-.sustainability .box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: start;
-    gap: 2rem;
-    width: 100%;
-    height: 100%;
-    margin-top: 150px;
-
-
-
-
-
-}
 
 .sustainability .box .image {
 
